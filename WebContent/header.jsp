@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <%@ page import="com.shashi.service.impl.*, com.shashi.service.*"%>
 
 <!DOCTYPE html>
@@ -15,27 +15,85 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+	<style>
+
+		.background-slider {
+			background-image: url(./images/slider-1.webp);
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			padding-top: 50%;
+			position: relative;
+			text-align: center;
+		}
+		.background-slider::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(90deg,rgba(0,0,0,0.95),rgba(0,0,0,0.5),rgba(0,0,0,0.95));
+
+		}
+		.header-shopname {
+			font-family: Roboto;
+			font-weight: 900;
+			color: #fff;
+			font-size: 60px;
+		}
+		.header-context {
+			color: #fff;
+			font-family: Roboto;
+			font-weight: 600;
+			font-size: 17px;
+		}
+		.content-silder {
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			text-align: center;
+		}
+		.header-finding--container {
+
+			position: relative;
+		}
+		.header-brand {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.shop-icon {
+			line-height: 2.7;
+		}
+	</style>
 </head>
 <body style="background-color: #E6F9E6;">
 	<!--Company Header Starting  -->
-	<div class="container-fluid text-center"
-		style="margin-top: 45px; background-color: #33cc33; color: white; padding: 5px;">
-		<h2>SHOP TRUY?N TRANH</h2>
-		<h6>We specialize in Electronics</h6>
-		<form class="form-inline" action="index.jsp" method="get">
-			<div class="input-group">
-				<input type="text" class="form-control" size="50" name="search"
-					placeholder="Search Items" required>
-				<div class="input-group-btn">
-					<input type="submit" class="btn btn-danger" value="Search" />
+	<div class=" background-slider container-fluid text-center">
+		<div class="content-silder">
+			<h2 class="header-shopname ">COMIC STORE</h2>
+			<h6 class="header-context">We specialize in comics</h6>
+			<form class="form-inline" action="index.jsp" method="get">
+				<div class="input-group header-finding--container">
+					<input type="text" class="input-finding form-control" size="50" name="search"
+						   placeholder="Search Items" required>
+					<div class="input-group-btn header-search--button">
+						<input type="submit" class="btn btn-danger" value="Search" />
+					</div>
 				</div>
-			</div>
-		</form>
-		<p align="center"
-			style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;"
-			id="message"></p>
+			</form>
+			<p align="center"
+			   style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;"
+			   id="message"></p>
+		</div>
+
 	</div>
 	<!-- Company Header Ending -->
 
@@ -54,8 +112,7 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.jsp"><span
-					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+				<a class="header-brand navbar-brand" href="index.jsp"><i class="fa-solid fa-shop shop-icon"></i>COMIC STORE</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
@@ -83,7 +140,6 @@
 	int notf = new CartServiceImpl().getCartCount((String) session.getAttribute("username"));
 	%>
 	<nav class="navbar navbar-default navbar-fixed-top">
-
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -91,8 +147,7 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="userHome.jsp"><span
-					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+				<a class="header-brand navbar-brand" href="userHome.jsp"><i class="fa-solid fa-shop shop-icon"></i>COMIC STORE</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="myNavbar">
@@ -147,8 +202,7 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="adminViewProduct.jsp"><span
-					class="glyphicon glyphicon-home">&nbsp;</span>Shopping Center</a>
+				<a class=" header-brand navbar-brand" href="adminViewProduct.jsp"><i class="shop-icon fa-solid fa-shop"></i>COMIC STORE</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
@@ -187,5 +241,22 @@
 	}
 	%>
 	<!-- End of Navigation Bar -->
+<script>
+	document.addEventListener('DOMContentLoaded',()=>{
+		var sliderHeight = document.querySelector(".background-slider").offsetHeight;
+		window.addEventListener('scroll', ()=> {
+			var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+
+			if (scrollPosition >= sliderHeight) {
+
+				document.querySelector('.navbar').style.backgroundColor = '#000';
+			} else {
+
+				document.querySelector('.navbar').style.backgroundColor = 'transparent';
+			}
+		});
+	})
+</script>
 </body>
 </html>

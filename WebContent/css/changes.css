@@ -4,9 +4,12 @@ body {
 /* Add a dark background color with a little bit see-through */
 .navbar {
 	margin-bottom: 0;
-	background-color: #2d2d30;
+	background-color: transparent;
+	color: #ffffff;
+	font-family:'Roboto' sans-serif;
+	font-weight: 700;
 	border: 0;
-	font-size: 14px !important;
+	font-size: 15px !important;
 	letter-spacing: 4px;
 	opacity: 0.9;
 }
