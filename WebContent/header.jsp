@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="com.shashi.service.impl.*, com.shashi.service.*"%>
 
@@ -22,7 +22,7 @@
 	<!--Company Header Starting  -->
 	<div class="container-fluid text-center"
 		style="margin-top: 45px; background-color: #33cc33; color: white; padding: 5px;">
-		<h2>Ellison Electronics</h2>
+		<h2>SHOP TRUY?N TRANH</h2>
 		<h6>We specialize in Electronics</h6>
 		<form class="form-inline" action="index.jsp" method="get">
 			<div class="input-group">

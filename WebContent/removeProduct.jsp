@@ -59,19 +59,8 @@
 				</div>
 				<div></div>
 				<div class="row">
-					<div class="col-md-12 form-group">
-						<label for="last_name">Product Id</label> <input type="text"
-							placeholder="Enter Product Id" name="prodid" class="form-control"
-							id="last_name" required>
-					</div>
-				</div>
-				<div class="row">
 					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
 						<a href="adminViewProduct.jsp" class="btn btn-info">Cancel</a>
-					</div>
-					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-danger">Remove
-							Product</button>
 					</div>
 				</div>
 			</form>

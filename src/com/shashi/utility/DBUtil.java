@@ -17,11 +17,18 @@ public class DBUtil {
 
 		try {
 			if (conn == null || conn.isClosed()) {
-				ResourceBundle rb = ResourceBundle.getBundle("application");
-				String connectionString = rb.getString("db.connectionString");
-				String driverName = rb.getString("db.driverName");
-				String username = rb.getString("db.username");
-				String password = rb.getString("db.password");
+//				ResourceBundle rb = ResourceBundle.getBundle("application");
+//				String connectionString = rb.getString("db.connectionString");
+//				String driverName = rb.getString("db.driverName");
+//				String username = rb.getString("db.username");
+//				String password = rb.getString("db.password");
+				// Cứng cố tên lớp của JDBC driver
+				String driverName = "com.mysql.cj.jdbc.Driver";
+
+				// Các thông tin kết nối từ file cấu hình hoặc nơi khác
+				String connectionString = "jdbc:mysql://localhost:3306/shopping-cart?useSSL=false";
+				String username = "root";
+				String password = "PhamHuuTuan258654@";
 				try {
 					Class.forName(driverName);
 				} catch (ClassNotFoundException e) {

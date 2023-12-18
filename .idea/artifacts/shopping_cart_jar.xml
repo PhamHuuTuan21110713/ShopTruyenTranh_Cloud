@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="shopping-cart:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/shopping_cart_jar</output-path>
+    <root id="archive" name="shopping-cart.jar" />
+  </artifact>
+</component>

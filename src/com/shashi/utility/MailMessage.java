@@ -27,9 +27,9 @@ public class MailMessage {
 
 	public static void transactionSuccess(String recipientEmail, String name, String transId, double transAmount) {
 		String recipient = recipientEmail;
-		String subject = "Order Placed at Ellison Electronics";
+		String subject = "Order Placed at Industry KAPV";
 		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
+				+ "      We are glad that you shop with Industry KAPV!" + "      <br/><br/>"
 				+ "      Your order has been placed successfully and under process to be shipped."
 				+ "<br/><h6>Please Note that this is a demo projet Email and you have not made any real transaction with us till now!</h6>"
 				+ "      <br/>" + "      Here is Your Transaction Details:<br/>" + "      <br/>"
@@ -49,9 +49,9 @@ public class MailMessage {
 
 	public static void orderShipped(String recipientEmail, String name, String transId, double transAmount) {
 		String recipient = recipientEmail;
-		String subject = "Hurray!!, Your Order has been Shipped from Ellison Electronics";
+		String subject = "Hurray!!, Your Order has been Shipped from Industry KAPV";
 		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
+				+ "      We are glad that you shop with Industry KAPV!" + "      <br/><br/>"
 				+ "      Your order has been shipped successfully and on the way to be delivered."
 				+ "<br/><h6>Please Note that this is a demo projet Email and you have not made any real transaction with us till now!</h6>"
 				+ "      <br/>" + "      Here is Your Transaction Details:<br/>" + "      <br/>"
@@ -71,9 +71,9 @@ public class MailMessage {
 
 	public static void productAvailableNow(String recipientEmail, String name, String prodName, String prodId) {
 		String recipient = recipientEmail;
-		String subject = "Product " + prodName + " is Now Available at Ellison Electronics";
+		String subject = "Product " + prodName + " is Now Available at Industry KAPV";
 		String htmlTextMessage = "<html>" + "  <body>" + "    <p>" + "      Hey " + name + ",<br/><br/>"
-				+ "      We are glad that you shop with Ellison Electronics!" + "      <br/><br/>"
+				+ "      We are glad that you shop with Industry KAPV!" + "      <br/><br/>"
 				+ "      As per your recent browsing history, we seen that you were searching for an item that was not available in sufficient amount"
 				+ " at that time. <br/><br/>"
 				+ "We are glad to say that the product named <font style=\"color:green;font-weight:bold;\">" + prodName
