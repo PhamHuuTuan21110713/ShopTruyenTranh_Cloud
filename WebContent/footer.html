@@ -12,6 +12,19 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/changes.css">
+	<style>
+		.infor-internets {
+			display: flex;
+			justify-content: space-between;
+		}
+		.infor-internet {
+			display: block;
+		}
+		.icon-contact {
+
+			font-size: 4rem;
+		}
+	</style>
 </head>
 <body style="background-color: #E6F9E6;">
 	<!-- Start the footer Contacts -->
@@ -19,46 +32,41 @@
 	<div class="container-fluid"
 		style="background-color: #454545; color: white; margin-top: 200px;">
 		<div class="container">
-			<h3 class="text-center">Contact</h3>
+			<h3 class="text-center">Information</h3>
 			<div class="row test">
 				<div class="col-md-4">
-					<p>Discussion.</p>
+					<p>Contact us.</p>
 					<p>
 						<span class="glyphicon glyphicon-map-marker"></span>01 Vo Van Ngan, Thu Duc, Ho Chi Minh city
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-phone"></span>Phone: +84
-						2023202417
+						123456789
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-envelope"></span>Email:
-						industrykapv@gmail.com
+						pht@gmail.com
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-copyright-mark"></span>
-						Copyright by KAPV
+						Make by Comis Writer :>
 					</p>
 				</div>
 				<div class="col-md-8">
-					<form action="fansMessage" method="post">
-						<div class="row">
-							<div class="col-sm-6 form-group">
-								<input class="form-control" id="name" name="name"
-									placeholder="Name" type="text" required>
-							</div>
-							<div class="col-sm-6 form-group">
-								<input class="form-control" id="email" name="email"
-									placeholder="Email" type="email" required>
-							</div>
-						</div>
-						<textarea class="form-control" id="comments" name="comments"
-							placeholder="Comment" rows="5" required></textarea>
-						<div class="row">
-							<div class="col-md-12 form-group">
-								<button class="btn pull-right" type="submit">Send</button>
-							</div>
-						</div>
-					</form>
+					<div class="infor-internets">
+						<a href="https://www.facebook.com/profile.php?id=100049653632141" class="infor-internet">
+							<i style="color: #0069d9" class="icon-contact fa-brands fa-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/" class="infor-internet">
+							<i  style="color: #e83e8c" class="icon-contact fa-brands fa-instagram"></i>
+						</a>
+						<a href="https://twitter.com/?lang=vi" class="infor-internet">
+							<i style="color: #7abaff" class="icon-contact fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://web.telegram.org/k/" class="infor-internet">
+							<i style="color: #0088cc" class="icon-contact fa-brands fa-telegram"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

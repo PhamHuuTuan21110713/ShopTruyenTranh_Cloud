@@ -83,9 +83,6 @@
 			</thead>
 			<tbody
 				style="background-color: white; font-size: 15px; font-weight: bold;">
-
-
-
 				<%
 				CartServiceImpl cart = new CartServiceImpl();
 				List<CartBean> cartItems = new ArrayList<CartBean>();
