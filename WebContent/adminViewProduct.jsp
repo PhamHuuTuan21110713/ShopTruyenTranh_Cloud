@@ -15,8 +15,18 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		.thumbnail {
+			min-height: 350px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+		.form-button {
+			padding: 10px;
+		}
+
+	</style>
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #fff;">
 
 	<%
 	/* Checking the user credentials */
@@ -63,13 +73,13 @@
 	<div class="text-center"
 		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
 	<!-- Start of Product Items List -->
-	<div class="container" style="background-color: #E6F9E6;">
+	<div class="container" style="background-color: #fff;">
 		<div class="row text-center">
 
 			<%
 			for (ProductBean product : products) {
 			%>
-			<div class="col-sm-4" style='height: 350px;'>
+			<div class="col-sm-4" style='height: 350px; margin-bottom: 20px'>
 				<div class="thumbnail">
 					<img src="./ShowImage?pid=<%=product.getProdId()%>" alt="Product"
 						style="height: 150px; max-width: 180px;">
@@ -83,14 +93,14 @@
 						$
 						<%=product.getProdPrice()%>
 					</p>
-					<form method="post">
+					<form method="post" class="form-button">
 						<button type="submit"
 							formaction="./RemoveProductSrv?prodid=<%=product.getProdId()%>"
-							class="btn btn-danger">Remove Product</button>
+							class="btn btn-danger">Remove</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit"
 							formaction="updateProduct.jsp?prodid=<%=product.getProdId()%>"
-							class="btn btn-primary">Update Product</button>
+							class="btn btn-primary">Update</button>
 					</form>
 				</div>
 			</div>
