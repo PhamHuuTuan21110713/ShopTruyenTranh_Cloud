@@ -11,12 +11,27 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/changes.css">
+	<style>
+		tbody tr {
+			background-color: #f0f0f0;
+			border-radius: 6px;
+			margin: 5px 0;
+			border: 1px solid #f0f0f0;
+			overflow: hidden;
+		}
+		tbody tr:nth-child(even){
+			background-color: #c3ceeb;
+		}
+		thead {
+			background-color: #36415c;
+		}
+	</style>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #fff;">
 	<%
 	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
@@ -39,13 +54,13 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: green; font-size: 24px; font-weight: bold;">Stock
+		style="color: #36415c; font-size: 24px; font-weight: bold; margin: 10px 0">Stock
 		Products</div>
 	<div class="container-fluid">
 		<div class="table-responsive ">
 			<table class="table table-hover table-sm">
 				<thead
-					style="background-color: #2c6c4b; color: white; font-size: 18px;">
+					style="color: white; font-size: 18px;">
 					<tr>
 						<th>Image</th>
 						<th>ProductId</th>
@@ -58,8 +73,6 @@
 					</tr>
 				</thead>
 				<tbody style="background-color: white; font-size: 16px;">
-
-
 
 					<%
 					ProductServiceImpl productDao = new ProductServiceImpl();
@@ -96,9 +109,7 @@
 									class="btn btn-danger">Remove</button>
 							</form>
 						</td>
-
 					</tr>
-
 					<%
 					}
 					%>
