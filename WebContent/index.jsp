@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #ffffff;">
 
 	<%
 	/* Checking the user credentials */
@@ -36,18 +36,18 @@
 
 	String search = request.getParameter("search");
 	String type = request.getParameter("type");
-	String message = "All Products";
+	String message = "DANH SÁCH TRUYỆN";
 	if (search != null) {
 		products = prodDao.searchAllProducts(search);
-		message = "Showing Results for '" + search + "'";
+		message = "Kết quả tìm kếm cho '" + search + "'";
 	} else if (type != null) {
 		products = prodDao.getAllProductsByType(type);
-		message = "Showing Results for '" + type + "'";
+		//message = "Showing Results for '" + type + "'";
 	} else {
 		products = prodDao.getAllProducts();
 	}
 	if (products.isEmpty()) {
-		message = "No items found for the search '" + (search != null ? search : type) + "'";
+		message = "Không tìm thấy'" + (search != null ? search : type) + "'";
 		products = prodDao.getAllProducts();
 	}
 	%>
@@ -55,19 +55,20 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
+		style="color: #16129AFC; font-size: 20px; font-weight: bold;"><%=message%></div>
 	<div class="text-center" id="message"
 		style="color: black; font-size: 14px; font-weight: bold;"></div>
 	<!-- Start of Product Items List -->
 	<div class="container">
 		<div class="row text-center">
 
+
 			<%
 			for (ProductBean product : products) {
 				int cartQty = new CartServiceImpl().getCartItemCount(userName, product.getProdId());
 			%>
-			<div class="col-sm-4" style='height: 350px;'>
-				<div class="thumbnail">
+			<div class="col-sm-3 card h-100" style='height: 350px;margin-bottom: 10px;'>
+				<div class="thumbnail" style="margin-top: 5px; margin-bottom: 5px; border: 2px solid #5d5e69;">
 					<img src="./ShowImage?pid=<%=product.getProdId()%>" alt="Product"
 						style="height: 150px; max-width: 180px">
 					<p class="productname"><%=product.getProdName()%>
