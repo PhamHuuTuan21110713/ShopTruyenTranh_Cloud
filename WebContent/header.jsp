@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <%@ page import="com.shashi.service.impl.*, com.shashi.service.*"%>
 
 <!DOCTYPE html>
@@ -119,17 +119,7 @@
 					<li><a href="login.jsp">Login</a></li>
 					<li><a href="register.jsp">Register</a></li>
 					<li><a href="index.jsp">Products</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu">
-							<li><a href="index.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="index.jsp?type=tv">TVs</a></li>
-							<li><a href="index.jsp?type=laptop">Laptops</a></li>
-							<li><a href="index.jsp?type=camera">Camera</a></li>
-							<li><a href="index.jsp?type=speaker">Speakers</a></li>
-							<li><a href="index.jsp?type=tablet">Tablets</a></li>
-						</ul></li>
+
 				</ul>
 			</div>
 		</div>
@@ -154,17 +144,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="userHome.jsp"><span
 							class="glyphicon glyphicon-home">Products</span></a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu">
-							<li><a href="userHome.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="userHome.jsp?type=tv">TV</a></li>
-							<li><a href="userHome.jsp?type=laptop">Laptops</a></li>
-							<li><a href="userHome.jsp?type=camera">Camera</a></li>
-							<li><a href="userHome.jsp?type=speaker">Speakers</a></li>
-							<li><a href="userHome.jsp?type=tablet">Tablets</a></li>
-						</ul></li>
+
 					<%
 					if (notf == 0) {
 					%>
@@ -207,17 +187,7 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="adminViewProduct.jsp">Products</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu">
-							<li><a href="adminViewProduct.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="adminViewProduct.jsp?type=tv">Tvs</a></li>
-							<li><a href="adminViewProduct.jsp?type=laptop">Laptops</a></li>
-							<li><a href="adminViewProduct.jsp?type=camera">Camera</a></li>
-							<li><a href="adminViewProduct.jsp?type=speaker">Speakers</a></li>
-							<li><a href="adminViewProduct.jsp?type=tablet">Tablets</a></li>
-						</ul></li>
+
 					<li><a href="adminStock.jsp">Stock</a></li>
 					<li><a href="shippedItems.jsp">Shipped</a></li>
 					<li><a href="unshippedItems.jsp">Orders</a></li>
