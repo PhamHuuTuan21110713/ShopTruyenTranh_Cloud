@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -50,18 +50,18 @@
 
 	String search = request.getParameter("search");
 	String type = request.getParameter("type");
-	String message = "All Products";
+	String message = "Tất cả sản phẩm";
 	if (search != null) {
 		products = prodDao.searchAllProducts(search);
-		message = "Showing Results for '" + search + "'";
+		message = "Kết quả cho '" + search + "'";
 	} else if (type != null) {
 		products = prodDao.getAllProductsByType(type);
-		message = "Showing Results for '" + type + "'";
+		message = "Kết quả cho '" + type + "'";
 	} else {
 		products = prodDao.getAllProducts();
 	}
 	if (products.isEmpty()) {
-		message = "No items found for the search '" + (search != null ? search : type) + "'";
+		message = "Không có mục phù hợp cho '" + (search != null ? search : type) + "'";
 		products = prodDao.getAllProducts();
 	}
 	%>
@@ -96,11 +96,11 @@
 					<form method="post" class="form-button">
 						<button type="submit"
 							formaction="./RemoveProductSrv?prodid=<%=product.getProdId()%>"
-							class="btn btn-danger">Remove</button>
+							class="btn btn-danger">Cập nhật</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit"
 							formaction="updateProduct.jsp?prodid=<%=product.getProdId()%>"
-							class="btn btn-primary">Update</button>
+							class="btn btn-primary">Xóa</button>
 					</form>
 				</div>
 			</div>

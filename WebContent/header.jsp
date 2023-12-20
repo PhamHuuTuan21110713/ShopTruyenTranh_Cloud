@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-
 	pageEncoding="UTF-8"%>
 
 <%@ page import="com.shashi.service.impl.*, com.shashi.service.*"%>
@@ -81,7 +80,7 @@
 	<div class=" background-slider container-fluid text-center">
 		<div class="content-silder">
 			<h2 class="header-shopname ">COMIC STORE</h2>
-			<h6 class="header-context">We specialize in comics</h6>
+			<h6 class="header-context">Thỏa đam mê đọc truyện</h6>
 			<form class="form-inline" action="index.jsp" method="get">
 				<div class="input-group header-finding--container">
 					<input type="text" class="input-finding form-control" size="50" name="search"
@@ -118,9 +117,9 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.jsp">Login</a></li>
-					<li><a href="register.jsp">Register</a></li>
-					<li><a href="index.jsp">Products</a></li>
+					<li><a href="login.jsp">Đăng nhập</a></li>
+					<li><a href="register.jsp">Đăng ký</a></li>
+					<li><a href="index.jsp">Sản phẩm</a></li>
 
 				</ul>
 			</div>
@@ -145,13 +144,13 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="userHome.jsp"><span
-							class="glyphicon glyphicon-home">Products</span></a></li>
+							class="glyphicon glyphicon-home">Sản phẩm</span></a></li>
 
 					<%
 					if (notf == 0) {
 					%>
 					<li><a href="cartDetails.jsp"> <span
-							class="glyphicon glyphicon-shopping-cart"></span>Cart
+							class="glyphicon glyphicon-shopping-cart"></span>Giỏ hàng
 					</a></li>
 
 					<%
@@ -166,9 +165,9 @@
 					<%
 					}
 					%>
-					<li><a href="orderDetails.jsp">Orders</a></li>
-					<li><a href="userProfile.jsp">Profile</a></li>
-					<li><a href="./LogoutSrv">Logout</a></li>
+					<li><a href="orderDetails.jsp">Đơn hàng</a></li>
+					<li><a href="userProfile.jsp">Hò sơ</a></li>
+					<li><a href="./LogoutSrv">Đăng xuất</a></li>
 				</ul>
 			</div>
 		</div>
@@ -188,22 +187,22 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="adminViewProduct.jsp">Products</a></li>
+					<li><a href="adminViewProduct.jsp">Sản phẩm</a></li>
 
-					<li><a href="adminStock.jsp">Stock</a></li>
-					<li><a href="shippedItems.jsp">Shipped</a></li>
-					<li><a href="unshippedItems.jsp">Orders</a></li>
+					<li><a href="adminStock.jsp">Thống kê</a></li>
+					<li><a href="shippedItems.jsp">Đã giao</a></li>
+					<li><a href="unshippedItems.jsp">Đơn hàng</a></li>
 					<!-- <li><a href=""> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart</a></li> -->
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Update Items <span
+						data-toggle="dropdown" href="#">Thao tác <span
 							class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="addProduct.jsp">Add Product</a></li>
-							<li><a href="removeProduct.jsp">Remove Product</a></li>
-							<li><a href="updateProductById.jsp">Update Product</a></li>
+							<li><a href="addProduct.jsp">Thêm sản phẩm</a></li>
+							<li><a href="removeProduct.jsp">Xóa sản phẩm</a></li>
+							<li><a href="updateProductById.jsp">Cập nhật sản phẩm</a></li>
 						</ul></li>
-					<li><a href="./LogoutSrv">Logout</a></li>
+					<li><a href="./LogoutSrv">Đăng xuất</a></li>
 
 				</ul>
 			</div>

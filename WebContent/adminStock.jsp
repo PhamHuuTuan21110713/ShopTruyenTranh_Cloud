@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -54,22 +54,21 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: #36415c; font-size: 24px; font-weight: bold; margin: 10px 0">Stock
-		Products</div>
+		style="color: #36415c; font-size: 24px; font-weight: bold; margin: 10px 0"></div>
 	<div class="container-fluid">
 		<div class="table-responsive ">
 			<table class="table table-hover table-sm">
 				<thead
 					style="color: white; font-size: 18px;">
 					<tr>
-						<th>Image</th>
-						<th>ProductId</th>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Price</th>
-						<th>Sold Qty</th>
-						<th>Stock Qty</th>
-						<th colspan="2" style="text-align: center">Actions</th>
+						<th>Hình ảnh</th>
+						<th>Mã sản phẩm</th>
+						<th>Tên</th>
+						<th>Thể loại</th>
+						<th>Giá cả</th>
+						<th>Đã bán</th>
+						<th>Số hàng</th>
+						<th colspan="2" style="text-align: center">Thực hiện</th>
 					</tr>
 				</thead>
 				<tbody style="background-color: white; font-size: 16px;">
@@ -99,14 +98,14 @@
 							<form method="post">
 								<button type="submit"
 									formaction="updateProduct.jsp?prodid=<%=product.getProdId()%>"
-									class="btn btn-primary">Update</button>
+									class="btn btn-primary">Cập nhật</button>
 							</form>
 						</td>
 						<td>
 							<form method="post">
 								<button type="submit"
 									formaction="./RemoveProductSrv?prodid=<%=product.getProdId()%>"
-									class="btn btn-danger">Remove</button>
+									class="btn btn-danger">Xóa</button>
 							</form>
 						</td>
 					</tr>
@@ -117,8 +116,7 @@
 					if (products.size() == 0) {
 					%>
 					<tr style="background-color: grey; color: white;">
-						<td colspan="7" style="text-align: center;">No Items
-							Available</td>
+						<td colspan="7" style="text-align: center;">Không có mục phù hợp</td>
 
 					</tr>
 					<%
