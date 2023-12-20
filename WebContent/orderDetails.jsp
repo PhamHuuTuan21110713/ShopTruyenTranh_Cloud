@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/changes.css">
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #ffffff;">
 
 	<%
 	/* Checking the user credentials */
@@ -40,22 +40,21 @@
 	<!-- <script>document.getElementById('mycart').innerHTML='<i data-count="20" class="fa fa-shopping-cart fa-3x icon-white badge" style="background-color:#333;margin:0px;padding:0px; margin-top:5px;"></i>'</script>
  -->
 	<div class="text-center"
-		style="color: green; font-size: 24px; font-weight: bold;">Order
-		Details</div>
+		style="color: green; font-size: 24px; font-weight: bold;">Chi tiết đơn hàng</div>
 	<!-- Start of Product Items List -->
 	<div class="container">
-		<div class="table-responsive ">
-			<table class="table table-hover table-sm">
+		<div class="table-responsive " style="border-radius: 20px;">
+			<table class="table table-hover table-sm" style="border: 3px solid #113ef3; padding: 10px; border-radius: 20px;border-spacing: 0;">
 				<thead
-					style="background-color: black; color: white; font-size: 14px; font-weight: bold;">
+					style="background-color: #113ef3; color: white; font-size: 14px; font-weight: bold;">
 					<tr>
-						<th>Picture</th>
-						<th>ProductName</th>
-						<th>OrderId</th>
-						<th>Quantity</th>
-						<th>Price</th>
-						<th>Time</th>
-						<th>Status</th>
+						<th>Sách</th>
+						<th>Tên sách</th>
+						<th>Mã số</th>
+						<th>Số lượng</th>
+						<th>Giá</th>
+						<th>Thời gian mua</th>
+						<th>Trạng thái</th>
 					</tr>
 				</thead>
 				<tbody
@@ -64,7 +63,7 @@
 					for (OrderDetails order : orders) {
 					%>
 
-					<tr>
+					<tr style="border-radius: 20px; border-color: 2px solid #0b0f13">
 						<td><img src="./ShowImage?pid=<%=order.getProductId()%>"
 							style="width: 50px; height: 50px;"></td>
 						<td><%=order.getProdName()%></td>
@@ -72,7 +71,7 @@
 						<td><%=order.getQty()%></td>
 						<td><%=order.getAmount()%></td>
 						<td><%=order.getTime()%></td>
-						<td class="text-success"><%=order.getShipped() == 0 ? "ORDER_PLACED" : "ORDER_SHIPPED"%></td>
+						<td class="text-success"><%=order.getShipped() == 0 ? "Đã đặt hàng" : "Đơn hàng đã được giao"%></td>
 					</tr>
 
 					<%
