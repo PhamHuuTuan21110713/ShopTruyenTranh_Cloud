@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #ffffff;">
 	<%
 	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
@@ -41,12 +41,12 @@
 	%>
 	<div class="container">
 		<div class="row"
-			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
+			style="margin-top: 3%; margin-left: 2px; margin-right: 2px;">
 			<form action="./RemoveProductSrv" method="post"
 				class="col-md-4 col-md-offset-4"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
+				style="border: 2px solid black; border-radius: 10px; border: 2px solid #113ef3 ;background-color: #ffffff; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h3 style="color: green;">Product Deletion Form</h3>
+					<h3 style="color: green;">Xoá loại sách</h3>
 					<%
 					if (message != null) {
 					%>
@@ -60,7 +60,7 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<a href="adminViewProduct.jsp" class="btn btn-info">Cancel</a>
+						<a href="adminViewProduct.jsp" class="btn btn-info">Huỷ</a>
 					</div>
 				</div>
 			</form>
