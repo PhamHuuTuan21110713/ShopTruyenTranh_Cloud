@@ -95,7 +95,8 @@ body {
 .productname {
 	color: green;
 	font-size: 15px;
-	font-family: fantasy;
+	font-family: arial;
+	font-weight: bold;
 }
 
 .productinfo {
