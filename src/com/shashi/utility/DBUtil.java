@@ -28,7 +28,12 @@ public class DBUtil {
 				// Các thông tin kết nối từ file cấu hình hoặc nơi khác
 				String connectionString = "jdbc:mysql://localhost:3306/shopping-cart?useSSL=false";
 				String username = "root";
-				String password = "1234";
+				String password = "PhamHuuTuan258654@";
+				/*
+				 * String connectionString =
+				 * "jdbc:mysql://localhost:3306/shopping-cart?useSSL=false"; String username =
+				 * "root"; String password = "1234";
+				 */
 				try {
 					Class.forName(driverName);
 				} catch (ClassNotFoundException e) {
