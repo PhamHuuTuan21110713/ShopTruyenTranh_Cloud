@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,10 +68,10 @@
 					<div class="col-md-6 form-group">
 						<label for="producttype">Thể loại</label> <select name="type"
 							id="producttype" class="form-control" required>
-							<option value="mobile">Action</option>
-							<option value="tv">Romantic</option>
-							<option value="camera">Horror</option>
-							<option value="laptop">Comady</option>
+							<option value=science>Khoa học viễn tưởng</option>
+							<option value="romance">Tình cảm</option>
+							<option value="horror">Kinh dị</option>
+							<option value="comedy">Hài hước</option>
 						</select>
 					</div>
 				</div>

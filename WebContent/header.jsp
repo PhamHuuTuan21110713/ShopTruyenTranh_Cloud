@@ -117,10 +117,22 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="login.jsp">Login</a></li>
+					<li><a href="register.jsp">Register</a></li>
+					<li><a href="index.jsp">Products</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
+						</ul></li>
 					<li><a href="login.jsp">Đăng nhập</a></li>
 					<li><a href="register.jsp">Đăng ký</a></li>
 					<li><a href="index.jsp">Sản phẩm</a></li>
-
 				</ul>
 			</div>
 		</div>
@@ -144,8 +156,17 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="userHome.jsp"><span
+							class="glyphicon glyphicon-home">Products</span></a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
+						</ul></li>
 							class="glyphicon glyphicon-home">Sản phẩm</span></a></li>
-
 					<%
 					if (notf == 0) {
 					%>
@@ -187,6 +208,19 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="adminViewProduct.jsp">Products</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
+						</ul></li>
+					<li><a href="adminStock.jsp">Stock</a></li>
+					<li><a href="shippedItems.jsp">Shipped</a></li>
+					<li><a href="unshippedItems.jsp">Orders</a></li>
 					<li><a href="adminViewProduct.jsp">Sản phẩm</a></li>
 
 					<li><a href="adminStock.jsp">Thống kê</a></li>

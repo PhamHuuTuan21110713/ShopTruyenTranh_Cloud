@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-		 pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.beans.*,com.shashi.service.*,java.util.*"%>
 <!DOCTYPE html >
@@ -17,7 +18,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/changes.css">
 </head>
-<body style="background-color: #fff;">
+<body style="background-color: #FFF;">
+
 	<%
 	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
