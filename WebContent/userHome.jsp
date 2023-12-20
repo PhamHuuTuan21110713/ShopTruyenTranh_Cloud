@@ -33,18 +33,18 @@
 
 	String search = request.getParameter("search");
 	String type = request.getParameter("type");
-	String message = "All Products";
+	String message = "Tất cả sản phẩm";
 	if (search != null) {
 		products = prodDao.searchAllProducts(search);
-		message = "Showing Results for '" + search + "'";
+		message = "Kết quả cho '" + search + "'";
 	} else if (type != null) {
 		products = prodDao.getAllProductsByType(type);
-		message = "Showing Results for '" + type + "'";
+		message = "Kết quả cho '" + type + "'";
 	} else {
 		products = prodDao.getAllProducts();
 	}
 	if (products.isEmpty()) {
-		message = "No items found for the search '" + (search != null ? search : type) + "'";
+		message = "Không tìm thấy kết quả cho '" + (search != null ? search : type) + "'";
 		products = prodDao.getAllProducts();
 	}
 	%>
@@ -88,20 +88,20 @@
 						%>
 						<button type="submit"
 							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=1"
-							class="btn btn-success">Add to Cart</button>
+							class="btn btn-success">Thêm vào giỏ</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit"
 							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=1"
-							class="btn btn-primary">Buy Now</button>
+							class="btn btn-primary">Mua ngay</button>
 						<%
 						} else {
 						%>
 						<button type="submit"
 							formaction="./AddtoCart?uid=<%=userName%>&pid=<%=product.getProdId()%>&pqty=0"
-							class="btn btn-danger">Remove From Cart</button>
+							class="btn btn-danger">Xóa khỏi giỏ</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="submit" formaction="cartDetails.jsp"
-							class="btn btn-success">Checkout</button>
+							class="btn btn-success">Chi tiết</button>
 						<%
 						}
 						%>

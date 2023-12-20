@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.beans.*,com.shashi.service.*,java.util.*"%>
 <!DOCTYPE html >
@@ -18,6 +19,7 @@
 <link rel="stylesheet" href="css/changes.css">
 </head>
 <body style="background-color: #FFF;">
+
 	<%
 	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
@@ -39,21 +41,20 @@
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
-		style="color: green; font-size: 24px; font-weight: bold;">UnShipped
-		Orders</div>
+		style="color: #000; font-size: 24px; font-weight: bold;">Đơn chưa giao</div>
 	<div class="container-fluid">
 		<div class="table-responsive ">
 			<table class="table table-hover table-sm">
 				<thead
-					style="background-color: #700fb7; color: white; font-size: 16px;">
+					style="background-color: #1a4978; color: white; font-size: 16px;">
 					<tr>
-						<th>TransactionId</th>
-						<th>ProductId</th>
-						<th>User Email Id</th>
-						<th>Address</th>
-						<th>Quantity</th>
-						<th>Status</th>
-						<th>Action</th>
+						<th>Mã giao dịch</th>
+						<th>Mã sản phẩm</th>
+						<th>Email</th>
+						<th>Địa chỉ</th>
+						<th>Số lượng</th>
+						<th>Trạng thái</th>
+						<th>Thực hiện</th>
 					</tr>
 				</thead>
 				<tbody style="background-color: white;">
@@ -81,10 +82,10 @@
 						<td><%=userId%></td>
 						<td><%=userAddr%></td>
 						<td><%=quantity%></td>
-						<td>READY_TO_SHIP</td>
+						<td>Sẵn sàng để giao</td>
 						<td><a
 							href="ShipmentServlet?orderid=<%=order.getTransactionId()%>&amount=<%=order.getAmount()%>&userid=<%=userId%>&prodid=<%=order.getProductId()%>"
-							class="btn btn-success">SHIP NOW</a></td>
+							class="btn btn-success">Giao hàng</a></td>
 					</tr>
 
 					<%
@@ -95,8 +96,7 @@
 					if (count == 0) {
 					%>
 					<tr style="background-color: grey; color: white;">
-						<td colspan="7" style="text-align: center;">No Items
-							Available</td>
+						<td colspan="7" style="text-align: center;">Không có mục phù hợp</td>
 
 					</tr>
 					<%

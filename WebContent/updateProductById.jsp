@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +15,9 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+
 <body style="background-color: #FFF;">
+
 	<%
 	/* Checking the user credentials */
 	String userType = (String) session.getAttribute("usertype");
@@ -41,9 +44,9 @@
 			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
 			<form action="updateProduct.jsp" method="post"
 				class="col-md-4 col-md-offset-4"
-				style="border: 2px solid black; border-radius: 10px; background-color: #FFE5CC; padding: 10px;">
+				style="border: 2px solid black; border-radius: 10px; background-color: #fff; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h3 style="color: green;">Product Update Form</h3>
+					<h3 style="color: #000;">Cập nhật sản phẩm</h3>
 					<%
 					if (message != null) {
 					%>
@@ -57,18 +60,17 @@
 				<div></div>
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<label for="last_name">Product Id</label> <input type="text"
+						<label for="last_name">Mã sản phẩm</label> <input type="text"
 							placeholder="Enter Product Id" name="prodid" class="form-control"
 							id="last_name" required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<a href="adminViewProduct.jsp" class="btn btn-info">Cancel</a>
+						<a href="adminViewProduct.jsp" class="btn btn-info">Hủy</a>
 					</div>
 					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-danger">Update
-							Product</button>
+						<button type="submit" class="btn btn-danger">Xác nhận</button>
 					</div>
 				</div>
 			</form>
