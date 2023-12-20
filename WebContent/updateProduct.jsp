@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -51,7 +51,7 @@
 					<div class="form-group">
 						<img src="./ShowImage?pid=<%=product.getProdId()%>"
 							alt="Product Image" height="100px" />
-						<h2 style="color: green;">Product Update Form</h2>
+						<h2 style="color: green;">Cập nhật</h2>
 					</div>
 
 					<%
@@ -70,7 +70,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6 form-group">
-						<label for="last_name">Product Name</label> <input type="text"
+						<label for="last_name">Tên sản phẩm</label> <input type="text"
 							placeholder="Enter Product Name" name="name" class="form-control"
 							value="<%=product.getProdName()%>" id="last_name" required>
 					</div>
@@ -78,28 +78,22 @@
 						<%
 						String ptype = product.getProdType();
 						%>
-						<label for="producttype">Product Type</label> <select name="type"
+						<label for="producttype">Thể loại</label> <select name="type"
 							id="producttype" class="form-control" required>
 							<option value="mobile"
-								<%="mobile".equalsIgnoreCase(ptype) ? "selected" : ""%>>MOBILE</option>
+								<%="mobile".equalsIgnoreCase(ptype) ? "selected" : ""%>>Action</option>
 							<option value="tv"
-								<%="tv".equalsIgnoreCase(ptype) ? "selected" : ""%>>TV</option>
+								<%="tv".equalsIgnoreCase(ptype) ? "selected" : ""%>>Romantic</option>
 							<option value="camera"
-								<%="camera".equalsIgnoreCase(ptype) ? "selected" : ""%>>CAMERA</option>
+								<%="camera".equalsIgnoreCase(ptype) ? "selected" : ""%>>Horror</option>
 							<option value="laptop"
-								<%="laptop".equalsIgnoreCase(ptype) ? "selected" : ""%>>LAPTOP</option>
-							<option value="tablet"
-								<%="tablet".equalsIgnoreCase(ptype) ? "selected" : ""%>>TABLET</option>
-							<option value="speaker"
-								<%="speaker".equalsIgnoreCase(ptype) ? "selected" : ""%>>SPEAKER</option>
-							<option value="other"
-								<%="other".equalsIgnoreCase(ptype) ? "selected" : ""%>>Some
-								Other Appliances</option>
+								<%="laptop".equalsIgnoreCase(ptype) ? "selected" : ""%>>Comady</option>
+
 						</select>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="last_name">Product Description</label>
+					<label for="last_name">Mô tả chi tiết</label>
 					<textarea name="info" class="form-control text-align-left"
 						id="last_name" required><%=product.getProdInfo()%></textarea>
 				</div>
@@ -111,7 +105,7 @@
 							id="last_name" required>
 					</div>
 					<div class="col-md-6 form-group">
-						<label for="last_name">Stock Quantity</label> <input type="number"
+						<label for="last_name">Thống kê số lượng</label> <input type="number"
 							value="<%=product.getProdQuantity()%>"
 							placeholder="Enter Stock Quantity" class="form-control"
 							id="last_name" name="quantity" required>
@@ -119,11 +113,10 @@
 				</div>
 				<div class="row text-center">
 					<div class="col-md-4" style="margin-bottom: 2px;">
-						<button formaction="adminViewProduct.jsp" class="btn btn-danger">Cancel</button>
+						<button formaction="adminViewProduct.jsp" class="btn btn-danger">Hủy</button>
 					</div>
 					<div class="col-md-4">
-						<button type="submit" class="btn btn-success">Update
-							Product</button>
+						<button type="submit" class="btn btn-success">Xác nhận</button>
 					</div>
 				</div>
 			</form>

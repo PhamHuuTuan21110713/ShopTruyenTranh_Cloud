@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+		 pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #fff;">
 
 	<%
 	/* Checking the user credentials */
@@ -60,9 +60,8 @@
 						<img src="images/profile.jpg" class="rounded-circle img-fluid"
 							style="width: 150px;">
 						<h5 class="my-3">
-							Hello
 							<%=user.getName()%>
-							here!!
+
 						</h5>
 						<!-- <p class="text-muted mb-1">Full Stack Developer</p>
 						<p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
@@ -71,11 +70,6 @@
 				<div class="card mb-4 mb-lg-0">
 					<div class="card-body p-0">
 						<ul class="list-group list-group-flush rounded-3">
-
-							<li
-								class="text-center list-group-item d-flex justify-content-between align-items-center p-3">
-								<h1>My Profile</h1>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -85,7 +79,7 @@
 					<div class="card-body">
 						<div class="row">
 							<div class="col-sm-3">
-								<p class="mb-0">Full Name</p>
+								<p class="mb-0">Họ và tên</p>
 							</div>
 							<div class="col-sm-9">
 								<p class="text-muted mb-0"><%=user.getName()%></p>
@@ -104,7 +98,7 @@
 						<hr>
 						<div class="row">
 							<div class="col-sm-3">
-								<p class="mb-0">Phone</p>
+								<p class="mb-0">Số điện thoại</p>
 							</div>
 							<div class="col-sm-9">
 								<p class="text-muted mb-0"><%=user.getMobile()%>
@@ -114,7 +108,7 @@
 						<hr>
 						<div class="row">
 							<div class="col-sm-3">
-								<p class="mb-0">Address</p>
+								<p class="mb-0">Địa chỉ</p>
 							</div>
 							<div class="col-sm-9">
 								<p class="text-muted mb-0"><%=user.getAddress()%>
@@ -124,7 +118,7 @@
 						<hr>
 						<div class="row">
 							<div class="col-sm-3">
-								<p class="mb-0">PinCode</p>
+								<p class="mb-0">Mã pin</p>
 							</div>
 							<div class="col-sm-9">
 								<p class="text-muted mb-0"><%=user.getPinCode()%>
