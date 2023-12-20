@@ -27,7 +27,7 @@ public class UpdateProductSrv extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		request.setCharacterEncoding("UTF-8");
 		HttpSession session = request.getSession();
 		String userType = (String) session.getAttribute("usertype");
 		String userName = (String) session.getAttribute("username");

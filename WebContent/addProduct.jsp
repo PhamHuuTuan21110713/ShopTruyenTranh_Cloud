@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,13 +67,10 @@
 					<div class="col-md-6 form-group">
 						<label for="producttype">Product Type</label> <select name="type"
 							id="producttype" class="form-control" required>
-							<option value="mobile">MOBILE</option>
-							<option value="tv">TV</option>
-							<option value="camera">CAMERA</option>
-							<option value="laptop">LAPTOP</option>
-							<option value="tablet">TABLET</option>
-							<option value="speaker">SPEAKER</option>
-							<option value="other">Some Other Appliances</option>
+							<option value=science>Khoa học viễn tưởng</option>
+							<option value="romance">Tình cảm</option>
+							<option value="horror">Kinh dị</option>
+							<option value="comedy">Hài hước</option>
 						</select>
 					</div>
 				</div>

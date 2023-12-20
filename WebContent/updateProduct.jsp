@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ page
 	import="com.shashi.service.impl.*, com.shashi.service.*,com.shashi.beans.*,java.util.*,javax.servlet.ServletOutputStream,java.io.*"%>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #E6F9E6;">
+<body style="background-color: #FFF;">
 	<%
 	/* Checking the user credentials */
 	String utype = (String) session.getAttribute("usertype");
@@ -80,18 +80,14 @@
 						%>
 						<label for="producttype">Product Type</label> <select name="type"
 							id="producttype" class="form-control" required>
-							<option value="mobile"
-								<%="mobile".equalsIgnoreCase(ptype) ? "selected" : ""%>>MOBILE</option>
-							<option value="tv"
-								<%="tv".equalsIgnoreCase(ptype) ? "selected" : ""%>>TV</option>
-							<option value="camera"
-								<%="camera".equalsIgnoreCase(ptype) ? "selected" : ""%>>CAMERA</option>
-							<option value="laptop"
-								<%="laptop".equalsIgnoreCase(ptype) ? "selected" : ""%>>LAPTOP</option>
-							<option value="tablet"
-								<%="tablet".equalsIgnoreCase(ptype) ? "selected" : ""%>>TABLET</option>
-							<option value="speaker"
-								<%="speaker".equalsIgnoreCase(ptype) ? "selected" : ""%>>SPEAKER</option>
+							<option value="science"
+								<%="science".equalsIgnoreCase(ptype) ? "selected" : ""%>>Khoa học viễn tưởng</option>
+							<option value="romance"
+								<%="romance".equalsIgnoreCase(ptype) ? "selected" : ""%>>Tình cảm</option>
+							<option value="horror"
+								<%="horror".equalsIgnoreCase(ptype) ? "selected" : ""%>>Kinh dị</option>
+							<option value="comedy"
+								<%="comedy".equalsIgnoreCase(ptype) ? "selected" : ""%>>Hài hước</option>
 							<option value="other"
 								<%="other".equalsIgnoreCase(ptype) ? "selected" : ""%>>Some
 								Other Appliances</option>

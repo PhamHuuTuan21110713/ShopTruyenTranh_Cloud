@@ -123,12 +123,10 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="index.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="index.jsp?type=tv">TVs</a></li>
-							<li><a href="index.jsp?type=laptop">Laptops</a></li>
-							<li><a href="index.jsp?type=camera">Camera</a></li>
-							<li><a href="index.jsp?type=speaker">Speakers</a></li>
-							<li><a href="index.jsp?type=tablet">Tablets</a></li>
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
 				</ul>
 			</div>
@@ -158,12 +156,10 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="userHome.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="userHome.jsp?type=tv">TV</a></li>
-							<li><a href="userHome.jsp?type=laptop">Laptops</a></li>
-							<li><a href="userHome.jsp?type=camera">Camera</a></li>
-							<li><a href="userHome.jsp?type=speaker">Speakers</a></li>
-							<li><a href="userHome.jsp?type=tablet">Tablets</a></li>
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
 					<%
 					if (notf == 0) {
@@ -211,12 +207,10 @@
 						data-toggle="dropdown" href="#">Category <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="adminViewProduct.jsp?type=mobile">Mobiles</a></li>
-							<li><a href="adminViewProduct.jsp?type=tv">Tvs</a></li>
-							<li><a href="adminViewProduct.jsp?type=laptop">Laptops</a></li>
-							<li><a href="adminViewProduct.jsp?type=camera">Camera</a></li>
-							<li><a href="adminViewProduct.jsp?type=speaker">Speakers</a></li>
-							<li><a href="adminViewProduct.jsp?type=tablet">Tablets</a></li>
+							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
+							<li><a href="index.jsp?type=romance">Tình cảm</a></li>
+							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
+							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
 					<li><a href="adminStock.jsp">Stock</a></li>
 					<li><a href="shippedItems.jsp">Shipped</a></li>
