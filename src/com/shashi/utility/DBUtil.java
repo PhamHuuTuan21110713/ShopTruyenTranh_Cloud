@@ -17,24 +17,21 @@ public class DBUtil {
 
 		try {
 			if (conn == null || conn.isClosed()) {
-//				ResourceBundle rb = ResourceBundle.getBundle("application");
-//				String connectionString = rb.getString("db.connectionString");
-//				String driverName = rb.getString("db.driverName");
-//				String username = rb.getString("db.username");
-//				String password = rb.getString("db.password");
-				// Cứng cố tên lớp của JDBC driver
 				String driverName = "com.mysql.cj.jdbc.Driver";
 
-				// Các thông tin kết nối từ file cấu hình hoặc nơi khác
-				/*
-				 * String connectionString =
-				 * "jdbc:mysql://localhost:3306/shopping-cart?useSSL=false"; String username =
-				 * "root"; String password = "PhamHuuTuan258654@";
-				 */
-
-				String connectionString = "jdbc:mysql://localhost:3306/shoptruyen?useUnicode=true&characterEncoding=UTF-8";
+//				String connectionString = "jdbc:mysql://localhost:3306/shoptruyen?useUnicode=true&characterEncoding=UTF-8";
+//				String username = "root";
+//				String password = "PhamHuuTuan258654@";
+//				String connectionString = "Server=google-cloud-sql-instance-ip;Database=your-database-name;User Id=your-username;Password=your-password;SslMode=Preferred;";
+				String instanceConnectionName = "cool-plasma-408716:asia-east2:shoptruyen";
+				String databaseName = "shoptruyen";
 				String username = "root";
-				String password = "PhamHuuTuan258654@";
+				String password = "";
+
+				// Tạo connection string
+				String connectionString = String.format("jdbc:mysql://google/%s?cloudSqlInstance=%s&"
+								+ "socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=%s&password=%s&useSSL=false",
+						databaseName, instanceConnectionName, username, password);
 
 				try {
 					Class.forName(driverName);
