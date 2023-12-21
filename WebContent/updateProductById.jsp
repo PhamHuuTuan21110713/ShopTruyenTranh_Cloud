@@ -61,16 +61,16 @@
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<label for="last_name">Mã sản phẩm</label> <input type="text"
-							placeholder="Enter Product Id" name="prodid" class="form-control"
+							placeholder="" name="prodid" class="form-control"
 							id="last_name" required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
-						<a href="adminViewProduct.jsp" class="btn btn-info">Hủy</a>
+						<a href="adminViewProduct.jsp" class="btn btn-warning">Hủy</a>
 					</div>
 					<div class="col-md-6 text-center">
-						<button type="submit" class="btn btn-danger">Xác nhận</button>
+						<button type="submit" class="btn btn-info">Xác nhận</button>
 					</div>
 				</div>
 			</form>

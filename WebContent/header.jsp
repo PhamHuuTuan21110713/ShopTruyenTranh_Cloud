@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Logout Header</title>
+<title>Shop truyen</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -118,11 +118,11 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 
-					<li><a href="login.jsp">Login</a></li>
-					<li><a href="register.jsp">Register</a></li>
-					<li><a href="index.jsp">Products</a></li>
+					<li><a href="login.jsp">Đăng nhập</a></li>
+					<li><a href="register.jsp">Đăng ký</a></li>
+					<li><a href="index.jsp">Sản phẩm</a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+						data-toggle="dropdown" href="#">Phân loại <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
 							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
@@ -130,9 +130,6 @@
 							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
 							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
-					<li><a href="login.jsp">Đăng nhập</a></li>
-					<li><a href="register.jsp">Đăng ký</a></li>
-					<li><a href="index.jsp">Sản phẩm</a></li>
 				</ul>
 			</div>
 		</div>
@@ -156,9 +153,9 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="userHome.jsp"><span
-							class="glyphicon glyphicon-home">Products</span></a></li>
+							class="glyphicon glyphicon-home">Sản phẩm</span></a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+						data-toggle="dropdown" href="#">Phân loại <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
 							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
@@ -166,7 +163,6 @@
 							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
 							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
-							class="glyphicon glyphicon-home">Sản phẩm</span></a></li>
 					<%
 					if (notf == 0) {
 					%>
@@ -187,7 +183,7 @@
 					}
 					%>
 					<li><a href="orderDetails.jsp">Đơn hàng</a></li>
-					<li><a href="userProfile.jsp">Hò sơ</a></li>
+					<li><a href="userProfile.jsp">Hồ sơ</a></li>
 					<li><a href="./LogoutSrv">Đăng xuất</a></li>
 				</ul>
 			</div>
@@ -208,9 +204,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="adminViewProduct.jsp">Products</a></li>
+					<li><a href="adminViewProduct.jsp">Sản phẩm</a></li>
 					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Category <span class="caret"></span>
+						data-toggle="dropdown" href="#">Phân loại
+						<span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
 							<li><a href="index.jsp?type=science">Khoa học viễn tưởng</a></li>
@@ -218,10 +215,6 @@
 							<li><a href="index.jsp?type=horror">Kinh dị</a></li>
 							<li><a href="index.jsp?type=comedy">Hài hước</a></li>
 						</ul></li>
-					<li><a href="adminStock.jsp">Stock</a></li>
-					<li><a href="shippedItems.jsp">Shipped</a></li>
-					<li><a href="unshippedItems.jsp">Orders</a></li>
-					<li><a href="adminViewProduct.jsp">Sản phẩm</a></li>
 
 					<li><a href="adminStock.jsp">Thống kê</a></li>
 					<li><a href="shippedItems.jsp">Đã giao</a></li>

@@ -62,7 +62,7 @@
 				<div class="row">
 					<div class="col-md-6 form-group">
 						<label for="last_name">Tên truyện</label> <input type="text"
-							placeholder="Enter Product Name" name="name" class="form-control"
+							placeholder="" name="name" class="form-control"
 							id="last_name" required>
 					</div>
 					<div class="col-md-6 form-group">
@@ -76,33 +76,33 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="last_name">Mô tả chi tiết</label>
+					<label for="last_name">Mô tả chi tiết (tác giả, cốt truyện,...)</label>
 					<textarea name="info" class="form-control" id="last_name" required></textarea>
 				</div>
 				<div class="row">
 					<div class="col-md-6 form-group">
 						<label for="last_name">Đơn giá </label> <input type="number"
-							placeholder="Enter Unit Price" name="price" class="form-control"
+							placeholder="" name="price" class="form-control"
 							id="last_name" required>
 					</div>
 					<div class="col-md-6 form-group">
 						<label for="last_name">Thống kê số lượng</label> <input type="number"
-							placeholder="Enter Stock Quantity" name="quantity"
+							placeholder="" name="quantity"
 							class="form-control" id="last_name" required>
 					</div>
 				</div>
 				<div>
 					<div class="col-md-12 form-group">
 						<label for="last_name">Hình ảnh</label> <input type="file"
-							placeholder="Select Image" name="image" class="form-control"
+							placeholder="" name="image" class="form-control"
 							id="last_name" required>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 text-center" style="margin-bottom: 2px;">
+					<div class="col-md-4 text-center" style="margin-bottom: 2px;">
 						<button type="reset" class="btn btn-danger">Hủy</button>
 					</div>
-					<div class="col-md-6 text-center">
+					<div class="col-md-8 text-center">
 						<button type="submit" class="btn btn-success">Xác nhận</button>
 					</div>
 				</div>

@@ -98,7 +98,7 @@
 							<form method="post">
 								<button type="submit"
 									formaction="updateProduct.jsp?prodid=<%=product.getProdId()%>"
-									class="btn btn-primary">Cập nhật</button>
+									class="btn btn-info">Cập nhật</button>
 							</form>
 						</td>
 						<td>

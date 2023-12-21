@@ -25,7 +25,7 @@
 			<form action="./LoginSrv" method="post" class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2"
 				  style=" border: 2px solid black; border-radius: 10px; background-color: #ffffff; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
-					<h2 style="color: green; font-weight: bold;">ĐĂNG NHẬP</h2>
+					<h2 style="color: #000; font-weight: bold;">ĐĂNG NHẬP</h2>
 					<%
 					if (message != null) {
 					%>
@@ -61,8 +61,8 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top: 50px">
-					<div class="col-md-12 text-center">
-						<button type="submit" class="btn btn-success">Đăng nhập</button>
+					<div class="col-12 text-center">
+						<button style="width: 90%" type="submit" class="btn btn-success">Đăng nhập</button>
 					</div>
 				</div>
 			</form>

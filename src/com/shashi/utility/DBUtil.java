@@ -32,9 +32,9 @@ public class DBUtil {
 				 * "root"; String password = "PhamHuuTuan258654@";
 				 */
 
-				String connectionString = "jdbc:mysql://localhost:3306/shopping-cart?useUnicode=true&characterEncoding=UTF-8";
+				String connectionString = "jdbc:mysql://localhost:3306/shoptruyen?useUnicode=true&characterEncoding=UTF-8";
 				String username = "root";
-				String password = "1234";
+				String password = "PhamHuuTuan258654@";
 
 				try {
 					Class.forName(driverName);
